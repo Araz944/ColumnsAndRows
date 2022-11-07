@@ -1,0 +1,106 @@
+.TooltipContainer {
+  position: absolute;
+  top: 55px;
+  left: -75px;
+  // left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: white;
+  padding: 10px;
+
+  .TitleDiv {
+
+    .Title {
+      margin: 0;
+      padding: 0;
+      font-weight: 500;
+    }
+  }
+
+  .InputStyle {
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    background-color: #f5f6fa;
+    text-indent: 0.6vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .TypeFormatContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    gap: 10px;
+    height: 25px;
+
+    .InputPart {
+
+      .TypeFormat {
+        width: 100%;
+        cursor: context-menu;
+      }
+
+      .ArrowPart {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        .ArrowUp {
+          background-image: url("./../../assets/svg/at.svg");
+        }
+
+        .ArrowDown {
+          background-image: url("./../../assets/svg/ab.svg");
+        }
+
+        .ArrowUp,
+        .ArrowDown {
+          position: relative;
+          left: 83px;
+          bottom: 21px;
+          width: 7px;
+          height: 7px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .Description {
+    // resize: none;
+    // min-height: 20px;
+  }
+
+  .ButtonSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+
+    .Button {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .CancelBtn {
+      background-color: #ff554d33 !important;
+      color: #ff554d !important;
+    }
+
+    .ApplyBtn {
+      background-color: #2c7cf6 !important;
+      color: #ffffff !important;
+    }
+  }
+}
